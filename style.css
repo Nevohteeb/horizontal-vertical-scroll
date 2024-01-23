@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@100...900&display=swap');
+
+:root {
+    --primary: #fcfbf8;
+    --secondary: #232121;
+    --alternate: #9a7cd8;
+}
+
+html {
+    font-size: max(100vw / 1920 * 10);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+    color: var(--secondary);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 64rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+p,
+a {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+
+/* Lenis CSS */
+
+html.Lenis {
+    height: auto
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lennis.lennis-scrolling iframe {
+    pointer-events: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_wrapper {
+    width: inherit;
+    height: inherit;
+}
+
+.hero_text {
+    position: fixed;
+    left: 0;
+    top: -25em;
+    padding: 1rem;
+    display: inline-flex;
+    width: max-content;
+    color: var(--secondary);
+}
+
+/* Gallery */
+.hero_gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero_gallery_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: inherit;
+    gap: 50rem;
+    padding-top: 80rem;
+    padding-bottom: 2rem;
+}
+
+.hero_gallery_figure {
+    position: relative;
+    width: 100rem;
+    height: 100rem;
+}
+
+.hero_gallery_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+    box-shadow: 1px 1px 40px -1px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 1px 1px 40px -1px rgba(0,0,0,0.61);
+    -moz-box-shadow: 1px 1px 40px -1px rgba(0,0,0,0.61);
+}
+
+.hero_gallery_info {
+    text-align: left;
+    padding: 0 32rem;
+}
+
+.hero_gallery_info_action {
+    margin-top: 2rem;
+    cursor: pointer;
+    color: var(--alternate);
+    text-shadow: 0px 0px 20px #f0edba;
+}
